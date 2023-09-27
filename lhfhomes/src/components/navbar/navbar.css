@@ -1,0 +1,23 @@
+.Title {
+    font-family: 'Lobster Two', cursive !important;
+    color: #333;
+    font-size: 32px !important;
+}
+
+/* Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+  }
+  
+  .logo {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Add margin to separate the logo from the website name */
+    /* Add responsive styles for the logo if needed */
+  }
+
+  
+
+  
