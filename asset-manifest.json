@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/lhfhomes/static/css/main.372d4384.css",
+    "main.js": "/lhfhomes/static/js/main.4632df87.js",
+    "static/media/image1.jpg": "/lhfhomes/static/media/image1.4908a3071ea8345e6f7b.jpg",
+    "static/media/image3.jpg": "/lhfhomes/static/media/image3.565609a0de36baf0073b.jpg",
+    "static/media/heroimage.png": "/lhfhomes/static/media/heroimage.e977a24f4ee39ae24bce.png",
+    "static/media/image2.jpg": "/lhfhomes/static/media/image2.228631e077294154a6cf.jpg",
+    "static/media/LHFHLogoTransparent.png": "/lhfhomes/static/media/LHFHLogoTransparent.d784fa4cfd36bc023029.png",
+    "index.html": "/lhfhomes/index.html",
+    "main.372d4384.css.map": "/lhfhomes/static/css/main.372d4384.css.map",
+    "main.4632df87.js.map": "/lhfhomes/static/js/main.4632df87.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.372d4384.css",
+    "static/js/main.4632df87.js"
+  ]
+}
