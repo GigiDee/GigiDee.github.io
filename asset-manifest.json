@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/lhfhomes/static/css/main.372d4384.css",
-    "main.js": "/lhfhomes/static/js/main.4632df87.js",
+    "main.css": "/lhfhomes/static/css/main.4a4eb60d.css",
+    "main.js": "/lhfhomes/static/js/main.d355c306.js",
+    "static/media/heroimage3.png": "/lhfhomes/static/media/heroimage3.b5b05144b6f067e89bd1.png",
     "static/media/image1.jpg": "/lhfhomes/static/media/image1.4908a3071ea8345e6f7b.jpg",
+    "static/media/heroimage2.jpg": "/lhfhomes/static/media/heroimage2.80fe819da71306034549.jpg",
+    "static/media/heroimage.jpg": "/lhfhomes/static/media/heroimage.3f913162c2cdedad04dd.jpg",
     "static/media/image3.jpg": "/lhfhomes/static/media/image3.565609a0de36baf0073b.jpg",
-    "static/media/heroimage.png": "/lhfhomes/static/media/heroimage.e977a24f4ee39ae24bce.png",
     "static/media/image2.jpg": "/lhfhomes/static/media/image2.228631e077294154a6cf.jpg",
     "static/media/LHFHLogoTransparent.png": "/lhfhomes/static/media/LHFHLogoTransparent.d784fa4cfd36bc023029.png",
     "index.html": "/lhfhomes/index.html",
-    "main.372d4384.css.map": "/lhfhomes/static/css/main.372d4384.css.map",
-    "main.4632df87.js.map": "/lhfhomes/static/js/main.4632df87.js.map"
+    "main.4a4eb60d.css.map": "/lhfhomes/static/css/main.4a4eb60d.css.map",
+    "main.d355c306.js.map": "/lhfhomes/static/js/main.d355c306.js.map"
   },
   "entrypoints": [
-    "static/css/main.372d4384.css",
-    "static/js/main.4632df87.js"
+    "static/css/main.4a4eb60d.css",
+    "static/js/main.d355c306.js"
   ]
 }
