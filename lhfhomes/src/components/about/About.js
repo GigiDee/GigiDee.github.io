@@ -1,120 +1,84 @@
-// import React from 'react';
-// import { Container, Typography, Button, Box } from '@mui/material';
-// import Hero from '../../assets/img/heroimage.png';
-// import './about.css'
-
-// const About = () => {
-//   const containerStyle = {
-//     padding: '16px', // You can adjust the padding as needed
-//   };
-
-//   const heroImageStyle = {
-//     width: '100%',
-//     maxWidth: '600px',
-//     height: 'auto',
-//     display: 'block',
-//     margin: '0 auto',
-//   };
-
-//   const textContainerStyle = {
-//     marginBottom: '16px', // You can adjust the margin as needed
-//   };
-
-//   const buttonContainerStyle = {
-//     textAlign: 'center',
-//   };
-
-//   const buttonStyle = {
-//     margin: '8px', // You can adjust the margin as needed
-//   };
-
-//   return (
-//     <Container style={containerStyle}>
-//       <img
-//         src={Hero}
-//         alt=""
-//         style={heroImageStyle}
-//       />
-//       <Box style={buttonContainerStyle}>
-//         <Button variant="contained" color="primary" style={buttonStyle}>
-//           Schedule A Tour
-//         </Button>
-//       </Box>
-//       <Typography variant="h3" component="h3" id="about" style={textContainerStyle}>
-//         About Auntie's Retirement Home:
-//       </Typography>
-//       <Typography variant="body1" style={textContainerStyle}>
-//         Welcome to Auntie's Retirement Home, where we provide a warm and caring environment for our residents. We understand the importance of comfort, safety, and companionship during the golden years of life.
-//       </Typography>
-//       <Typography variant="body1" style={textContainerStyle}>
-//         Our dedicated team of professionals is committed to ensuring that each resident enjoys a high quality of life. We offer a range of services and activities to meet the unique needs and preferences of our residents.
-//       </Typography>
-//       <Box style={buttonContainerStyle}>
-//         <Button variant="contained" color="primary" style={buttonStyle}>
-//           Get In Touch
-//         </Button>
-//       </Box>
-//     </Container>
-//   );
-// };
-
-// export default About;
-
-import React from 'react';
-import { Container, Typography, Button, Box, useMediaQuery } from '@mui/material';
-import Hero from '../../assets/img/heroimage.png';
-import './about.css';
+import React from "react";
+import { Container, Typography, Button, useMediaQuery } from "@mui/material";
 
 const About = () => {
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
+
   const containerStyle = {
-    padding: '16px',
+    backgroundColor: "#333",
+    padding: "20px",
+    zIndex: 2,
   };
 
-  const heroImageStyle = {
-    width: '100%',
-    maxWidth: '600px',
-    height: 'auto',
-    display: 'block',
-    margin: '0 auto',
+  const divStyle = {
+    backgroundColor: "#FFF5E1",
+    padding: "20px",
+    borderRadius: "15px",
+    marginTop: "-120px",
+    marginBottom: "0px",
+    border: "2px solid #F7931D",
+    textAlign: "center",
+    zIndex: 1,
+    position: 'relative',
   };
 
-  const textContainerStyle = {
-    marginBottom: '16px',
-    color: '#FFF5E1',
-    textAlign: 'center', // Center-align text for desktop
-    '@media (max-width: 600px)': {
-      textAlign: 'left', // Align text to the left for mobile and tablet
-    },
+  const mobileTextStyle = {
+    textAlign: "left",
   };
-
-  const buttonContainerStyle = {
-    textAlign: 'center',
-  };
-
-  const isDesktop = useMediaQuery('(min-width: 1024px)');
 
   return (
     <Container style={containerStyle}>
-      <img src={Hero} alt="" style={heroImageStyle} />
-      <Box style={buttonContainerStyle}>
-        <Button variant="contained" color="primary" sx={{ backgroundColor: '#F7931D', color: '#333', '&:hover': { backgroundColor: '#FFA040' } }}>
-          Schedule A Tour
-        </Button>
-      </Box>
-      <Typography variant="h3" component="h3" id="about" style={isDesktop ? textContainerStyle : { ...textContainerStyle, textAlign: 'left' }}>
-        About Auntie's Retirement Home:
-      </Typography>
-      <Typography variant="body1" style={isDesktop ? textContainerStyle : { ...textContainerStyle, textAlign: 'left' }}>
-        Welcome to Auntie's Retirement Home, where we provide a warm and caring environment for our residents. We understand the importance of comfort, safety, and companionship during the golden years of life.
-      </Typography>
-      <Typography variant="body1" style={isDesktop ? textContainerStyle : { ...textContainerStyle, textAlign: 'left' }}>
-        Our dedicated team of professionals is committed to ensuring that each resident enjoys a high quality of life. We offer a range of services and activities to meet the unique needs and preferences of our residents.
-      </Typography>
-      <Box style={buttonContainerStyle}>
-        <Button variant="contained" color="primary" sx={{ backgroundColor: '#F7931D', color: '#333', '&:hover': { backgroundColor: '#FFA040' } }}>
-          Get In Touch
-        </Button>
-      </Box>
+      <div style={divStyle}>
+        <Typography
+          variant="h3"
+          component="h3"
+          id="about"
+          style={{
+            color: "#333",
+            fontFamily: "'Lobster Two', cursive",
+          }}
+        >
+          About Us
+        </Typography>
+        <Typography
+          variant="body1"
+          style={{
+            color: "#333",
+            padding: "16px",
+            ...(isDesktop ? {} : mobileTextStyle),
+          }}
+        >
+          Love Hope and Faith Homes of Wisconsin is a faith-based adult family
+          home and was created to be a haven for adults with special needs.
+          Making residents truly feel at home while providing exceptional
+          compassionate care customized to meet each resident’s specific
+          personal needs is our highest priority. <br />
+          <br />
+          LHFH residents are treated with the dignity and respect they deserve,
+          while ensuring their individual rights, safety and healthcare needs
+          are met at all times. We firmly believe that all individuals deserve
+          outstanding care customized for their specific needs to maximize their
+          fullest potential while fostering independence. <br />
+          <br />
+          The management and staff are committed to ensuring that residents’
+          lives at Love Faith and Hope Homes are filled with appropriate
+          stimulating activities, healthy meals, a clean and safe environment,
+          and much more!
+        </Typography>
+        <div style={{ textAlign: "center" }}>
+          <Button
+            variant="contained"
+            color="primary"
+            sx={{
+              backgroundColor: "#F7931D",
+              color: "#333",
+              "&:hover": { backgroundColor: "#FFA040" },
+            }}
+          >
+            Get In Touch
+          </Button>
+        </div>
+      </div>
     </Container>
   );
 };
