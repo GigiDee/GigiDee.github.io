@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar/Navbar";
 import About from './components/about/About';
-import Carousel, { CarouselItem } from "./components/carousel/Carousel";
+import Gallery from "./components/gallery/Gallery";
 import Footer from "./components/footer/Footer"
 import Landing from "./components/landing/Landing"
 import './App.css'
@@ -13,7 +13,7 @@ const App = () => {
       <Navbar/>
       <Landing/>
       <About/>
-      <Carousel/>
+      <Gallery/>
       <Footer/>
     </div>
   );
