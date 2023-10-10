@@ -1,20 +1,18 @@
-/* carousel.css */
 .carousel {
   position: relative;
   margin: 20px 0;
   max-height: 800px;
-  overflow: hidden; /* Prevent images from spilling over */
-  text-align: center; /* Center-align content */
+  overflow: hidden; 
+  text-align: center; 
 }
 
 .carousel img {
   max-width: 100%;
-  margin: 0 auto; /* Center the images horizontally */
+  margin: 0 auto;
   display: block;
-  max-height: 100vh; /* Set a maximum height for the images */
+  max-height: 100vh; 
 }
 
-/* Style for responsive navigation buttons */
 .carousel .carousel-control {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
@@ -35,20 +33,19 @@
   transform: scale(1.1);
 }
 
-/* Position the left and right buttons */
+
 .carousel .carousel-control-prev {
   left: 10px;
-  top: 50%; /* Vertically center the left button */
+  top: 50%; 
   transform: translateY(-50%);
 }
 
 .carousel .carousel-control-next {
   right: 10px;
-  top: 50%; /* Vertically center the right button */
+  top: 50%; 
   transform: translateY(-50%);
 }
 
-/* Style for the overlay button */
 .overlay-button {
   position: absolute;
   bottom: 20px;
