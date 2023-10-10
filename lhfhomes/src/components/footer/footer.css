@@ -1,0 +1,9 @@
+.FooterLink {
+    text-decoration: none !important;
+    color: white !important;
+    transition: color 0.3s;
+}
+
+.FooterLink:hover {
+    color: #FFA040 !important; 
+  }
