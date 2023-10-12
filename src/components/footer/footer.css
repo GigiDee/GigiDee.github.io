@@ -7,3 +7,10 @@
 .FooterLink:hover {
     color: #FFA040 !important; 
   }
+
+  .FooterAdress {
+    text-align: center;
+    padding: 10px;
+  }
+
+ 

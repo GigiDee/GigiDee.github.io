@@ -15,9 +15,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 const Footer = () => {
   const virtualTourStyle = {
     fontFamily: "'Lobster Two', cursive",
-    fontSize: "63px",
     color: "#FFF5E1",
-    paddingBottom: "33px",
   };
 
   const isMobile = useMediaQuery("(max-width: 900px)");
@@ -42,16 +40,16 @@ const Footer = () => {
           width="100%"
           id="contact"
         >
-          <Typography variant="h3" style={virtualTourStyle}>
+          <Typography variant="h3" style={virtualTourStyle} sx={{fontSize: "63px", paddingBottom: "33px"}}>
             Contact Us
           </Typography>
-          <Typography variant="h6">
+          <Typography variant="h6" className="FooterAdress">
             5595 County Road Z, West Bend, WI 53095 | (262) 306-2100
           </Typography>
-          <Typography variant="h6">
+          <Typography variant="h6" className="FooterAdress">
             Copyright © 2023 Cedar Community // All rights reserved.
           </Typography>
-          <Typography variant="h6">Contact Details</Typography>
+          <Typography variant="h6" style={virtualTourStyle} sx={{fontSize: "36px", paddingTop: "10px", paddingBottom: "3px"}}>Contact Details</Typography>
 
           <Grid container spacing={2} justifyContent="center">
             {/* Left Side */}
@@ -97,9 +95,11 @@ const Footer = () => {
                 color: "#F7931D",
                 "&:hover": { backgroundColor: "#FFA040", color: "#333" },
               }}
-              href="https://www.facebook.com"
+              href="mailto:charm@lhfhomes.com"
             >
-              <FacebookIcon />
+              <MailOutlineIcon />
+            </IconButton>
+            {/* <FacebookIcon />
             </IconButton>
             <IconButton
               color="inherit"
@@ -118,15 +118,10 @@ const Footer = () => {
                 "&:hover": { backgroundColor: "#FFA040", color: "#333" },
               }}
               href="mailto:example@example.com"
-            >
-              <MailOutlineIcon />
-            </IconButton>
+            > */}
           </Box>
 
-          <Typography variant="h6">Links</Typography>
-
-          <Grid container spacing={2} justifyContent="center">
-            {/* Left Side */}
+          {/* <Grid container spacing={2} justifyContent="center">
             <Grid
               item
               xs={12}
@@ -147,7 +142,6 @@ const Footer = () => {
                 Privacy Policy
               </Link>
             </Grid>
-            {/* Right Side */}
             <Grid
               item
               xs={12}
@@ -169,7 +163,7 @@ const Footer = () => {
                 Terms and Conditions
               </Link>
             </Grid>
-          </Grid>
+          </Grid> */}
         </Box>
       </Toolbar>
     </AppBar>
