@@ -62,6 +62,23 @@ const Gallery = () => {
     padding: "20px",
     backgroundColor: "#333",
   };
+
+  const galleryContainerMobileStyle = {
+    backgroundColor: "#FFF5E1",
+    border: "2px solid #F7931D",
+    borderRadius: "15px",
+    textAlign: "center",
+    padding: "20px",
+    marginTop: "20px",
+    minHeight: "700px",
+    width: "80%",
+    margin: "0 auto",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  };
+
   return (
     <div style={containerStyle} id="tour">
       <img src={logo} alt="Love Hope Faith Homes Logo" style={logoStyle} />
