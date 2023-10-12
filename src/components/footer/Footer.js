@@ -66,9 +66,9 @@ const Footer = () => {
                 textAlign: "center",
               }}
             >
-              <Typography variant="h6">Charm</Typography>
+              <Typography variant="h6">Charm Brea</Typography>
               <Typography variant="body1">charm@asi-wi.com</Typography>
-              <Typography variant="body1">2422123435</Typography>
+              <Typography variant="body1">+12623882482</Typography>
             </Grid>
             {/* Right Side */}
             <Grid
@@ -83,9 +83,9 @@ const Footer = () => {
                 textAlign: "center",
               }}
             >
-              <Typography variant="h6">Charm</Typography>
-              <Typography variant="body1">charm@asi-wi.com</Typography>
-              <Typography variant="body1">2422123435</Typography>
+              <Typography variant="h6">Dawn Fritz</Typography>
+              <Typography variant="body1">dawn@asi-wi.com</Typography>
+              <Typography variant="body1">+12623657228</Typography>
             </Grid>
           </Grid>
 
