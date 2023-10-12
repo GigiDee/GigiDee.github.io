@@ -25,6 +25,7 @@ const Footer = () => {
       position="static"
       color="primary"
       classes={{ root: "matte-black-footer" }}
+      id="contact"
     >
       <Toolbar
         sx={{

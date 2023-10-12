@@ -27,12 +27,11 @@ const About = () => {
   };
 
   return (
-    <Container style={containerStyle}>
+    <Container style={containerStyle} id="about">
       <div style={divStyle}>
         <Typography
           variant="h3"
           component="h3"
-          id="about"
           style={{
             color: "#333",
             fontFamily: "'Lobster Two', cursive",
