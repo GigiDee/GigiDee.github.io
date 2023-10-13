@@ -20,7 +20,7 @@ const About = () => {
   };
 
   const logoStyle = {
-    width: '100px',
+    width: '150px',
     height: 'auto',
     marginBottom: '16px',
   };
