@@ -2,11 +2,18 @@ import React, { useState, useEffect } from "react";
 import { IconButton, useMediaQuery } from "@mui/material";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import "./carousel.css";
-import image1 from "../../assets/img/image1.jpg";
-import image2 from "../../assets/img/image2.jpg";
-import image3 from "../../assets/img/image3.jpg";
+import image1 from "../../assets/img/lhfh1.jpeg"
+import image2 from "../../assets/img/lhfh2.JPG";
+import image4 from "../../assets/img/lhfh4.jpeg";
+import image5 from "../../assets/img/lhfh5.jpeg";
+import image6 from "../../assets/img/lhfh6.jpeg";
+import image7 from "../../assets/img/lhfh7.jpeg";
+import image8 from "../../assets/img/lhfh8.jpeg";
+import image9 from "../../assets/img/lhfh9.jpeg";
+import image10 from "../../assets/img/lhfh10.png";
 
-const images = [image1, image2, image3];
+
+const images = [image1, image2, image4, image5, image6, image7, image8, image9, image10];
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

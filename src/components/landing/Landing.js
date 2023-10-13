@@ -1,9 +1,8 @@
 import React from 'react';
 import { Box, Button,Typography, useMediaQuery } from '@mui/material';
 import Logo from '../../assets/img/LHFHLogoTransparent.png';
-import Hero from '../../assets/img/heroimage.jpg';
 import Hero2 from '../../assets/img/heroimage2.jpg';
-import Hero3 from '../../assets/img/heroimage3.png';
+
 
 const About = () => {
   const mainContainerStyle = {
