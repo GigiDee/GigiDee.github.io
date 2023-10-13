@@ -45,10 +45,10 @@ const Footer = () => {
             Contact Us
           </Typography>
           <Typography variant="h6" className="FooterAdress" sx={{fontSize: "20px"}}>
-            5595 County Road Z, West Bend, WI 53095 | (262) 306-2100
+            1310 South 7th Avenue, West Bend, WI 53095 | (262) 353-3260
           </Typography>
           <Typography variant="h6" className="FooterAdress">
-            Copyright © 2023 Cedar Community // All rights reserved.
+            Copyright © 2023 Love Hope Faith Homes // All rights reserved.
           </Typography>
           <Typography variant="h6" style={virtualTourStyle} sx={{fontSize: "36px", paddingTop: "10px", paddingBottom: "3px"}}>Contact Details</Typography>
 
@@ -79,7 +79,7 @@ const Footer = () => {
               </IconButton>
             </Box>
               <Typography variant="h6">Charm Brea</Typography>
-              <Typography variant="body1">charm@asi-wi.com</Typography>
+              <Typography variant="body1">charm@lhfhome.com</Typography>
               <Typography variant="body1">+12623882482</Typography>
             </Grid>
             {/* Right Side */}
@@ -108,7 +108,7 @@ const Footer = () => {
               </IconButton>
             </Box>
               <Typography variant="h6">Dawn Fritz</Typography>
-              <Typography variant="body1">dawn@asi-wi.com</Typography>
+              <Typography variant="body1">dawn@lhfhome.com</Typography>
               <Typography variant="body1">+12623657228</Typography>
             </Grid>
           </Grid>
