@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dfc31340.css",
+    "main.js": "/static/js/main.fd376350.js",
+    "static/media/lhfh10.png": "/static/media/lhfh10.648a45677bdebc096a73.png",
+    "static/media/lhfh5.jpeg": "/static/media/lhfh5.3ebb637f1ff5e266077b.jpeg",
+    "static/media/heroimage2.jpg": "/static/media/heroimage2.80fe819da71306034549.jpg",
+    "static/media/lhfh6.jpeg": "/static/media/lhfh6.2bfa8864dd2f26f67f5d.jpeg",
+    "static/media/lhfh2.JPG": "/static/media/lhfh2.d1280dcac4dbc748f2a7.JPG",
+    "static/media/lhfh8.jpeg": "/static/media/lhfh8.6b09c8f07754770ee9e9.jpeg",
+    "static/media/lhfh7.jpeg": "/static/media/lhfh7.9d0cc549386d2832cf3b.jpeg",
+    "static/media/lhfh9.jpeg": "/static/media/lhfh9.fb96ef20101780d882e5.jpeg",
+    "static/media/lhfh4.jpeg": "/static/media/lhfh4.b23815209e984a40be98.jpeg",
+    "static/media/lhfh1.jpeg": "/static/media/lhfh1.228631e077294154a6cf.jpeg",
+    "static/media/LHFHLogoTransparent.png": "/static/media/LHFHLogoTransparent.d784fa4cfd36bc023029.png",
+    "index.html": "/index.html",
+    "main.dfc31340.css.map": "/static/css/main.dfc31340.css.map",
+    "main.fd376350.js.map": "/static/js/main.fd376350.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfc31340.css",
+    "static/js/main.fd376350.js"
+  ]
+}
