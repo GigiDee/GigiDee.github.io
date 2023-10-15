@@ -26,6 +26,16 @@ const About = () => {
     textAlign: "left",
   };
 
+  const scrollToSection = (sectionId, offset = 0) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop + offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <Container style={containerStyle} id="about">
       <div style={divStyle}>
@@ -60,7 +70,7 @@ const About = () => {
           fullest potential while fostering independence. <br />
           <br />
           The management and staff are committed to ensuring that residents’
-          lives at Love Faith Hope Homes are filled with appropriate
+          lives at Love Hope Faith Homes are filled with appropriate
           stimulating activities, healthy meals, a clean and safe environment,
           and much more!
         </Typography>
@@ -68,6 +78,7 @@ const About = () => {
           <Button
             variant="contained"
             color="primary"
+            onClick={() => scrollToSection("contact")}
             sx={{
               backgroundColor: "#F7931D",
               color: "#333",
