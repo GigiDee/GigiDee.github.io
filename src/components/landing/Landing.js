@@ -34,6 +34,16 @@ const About = () => {
         fontFamily: "'Lobster Two', cursive",
       };
 
+      const scrollToSection = (sectionId, offset = 0) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          window.scrollTo({
+            top: section.offsetTop + offset,
+            behavior: "smooth",
+          });
+        }
+      };
+
   const isDesktop = useMediaQuery('(min-width: 1024px)');
 
   return (
@@ -45,6 +55,7 @@ const About = () => {
       <Button
         variant="contained"
         color="primary"
+        onClick={() => scrollToSection("contact")}
         sx={{
           backgroundColor: '#F7931D',
           color: '#333',
