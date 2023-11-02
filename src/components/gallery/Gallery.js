@@ -78,7 +78,7 @@ const Gallery = () => {
                 <iframe
                   width="853"
                   height="480"
-                  src="https://www.youtube.com/embed/IrAfDr7w-SM"
+                  src="https://www.youtube.com/embed/IrAfDr7w-SM?rel=0"
                   title="Embedded youtube"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
