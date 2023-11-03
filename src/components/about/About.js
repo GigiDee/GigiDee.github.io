@@ -58,7 +58,7 @@ const About = () => {
           }}
         >
           Love Hope Faith Homes of Wisconsin is a faith-based adult family
-          home and was created to be a haven for adults with special needs.
+          home, and was created to be a haven for adults with special needs.
           Making residents truly feel at home while providing exceptional
           compassionate care customized to meet each resident’s specific
           personal needs is our highest priority. <br />
