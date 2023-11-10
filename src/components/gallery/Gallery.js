@@ -37,7 +37,7 @@ const Gallery = () => {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    "@media (max-width: 600px)": {
+    "@media (maxWidth: 600px)": {
       minHeight: "300px",
     },
   };
