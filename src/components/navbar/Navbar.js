@@ -13,7 +13,7 @@ import logo from '../../assets/img/LHFHLogoTransparent.png';
 
 function Navbar() {
   const [menuAnchorEl, setMenuAnchorEl] = useState(null);
-  const isMobile = useMediaQuery("(max-width: 800px)");
+  const isMobile = useMediaQuery("(maxWidth: 800px)");
 
   const handleMenuOpen = (event) => {
     setMenuAnchorEl(event.currentTarget);

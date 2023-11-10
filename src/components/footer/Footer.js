@@ -18,7 +18,7 @@ const Footer = () => {
     color: "#FFF5E1",
   };
 
-  const isMobile = useMediaQuery("(max-width: 900px)");
+  const isMobile = useMediaQuery("(maxWidth: 900px)");
 
   return (
     <AppBar
