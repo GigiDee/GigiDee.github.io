@@ -18,7 +18,7 @@ const Footer = () => {
     color: "#FFF5E1",
   };
 
-  const isMobile = useMediaQuery("(maxWidth: 900px)");
+  const isMobile = useMediaQuery("(max-width: 800px)");
 
   return (
     <AppBar
@@ -112,83 +112,6 @@ const Footer = () => {
               <Typography variant="body1">+12623657228</Typography>
             </Grid>
           </Grid>
-
-          {/* <Box marginTop={2}>
-            <IconButton
-              color="inherit"
-              sx={{
-                color: "#F7931D",
-                "&:hover": { backgroundColor: "#FFA040", color: "#333" },
-              }}
-              href="mailto:charm@lhfhomes.com"
-            >
-              <MailOutlineIcon />
-            </IconButton> */}
-            {/* <FacebookIcon />
-            </IconButton>
-            <IconButton
-              color="inherit"
-              sx={{
-                color: "#F7931D",
-                "&:hover": { backgroundColor: "#FFA040", color: "#333" },
-              }}
-              href="https://www.instagram.com"
-            >
-              <InstagramIcon />
-            </IconButton>
-            <IconButton
-              color="inherit"
-              sx={{
-                color: "#F7931D",
-                "&:hover": { backgroundColor: "#FFA040", color: "#333" },
-              }}
-              href="mailto:example@example.com"
-            > */}
-          {/* </Box> */}
-
-          {/* <Grid container spacing={2} justifyContent="center">
-            <Grid
-              item
-              xs={12}
-              md={6}
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: isMobile ? "center" : "flex-end",
-                justifyContent: isMobile ? "center" : "flex-end", 
-              }}
-            >
-              <Link
-                href="https://example.com"
-                target="_blank"
-                rel="noopener"
-                className="FooterLink"
-              >
-                Privacy Policy
-              </Link>
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              md={6}
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: isMobile ? "center" : "flex-start",
-                justifyContent: isMobile ? "center" : "flex-start",
-                textAlign: "center",
-              }}
-            >
-              <Link
-                href="https://example.com"
-                target="_blank"
-                rel="noopener"
-                className="FooterLink"
-              >
-                Terms and Conditions
-              </Link>
-            </Grid>
-          </Grid> */}
         </Box>
       </Toolbar>
     </AppBar>

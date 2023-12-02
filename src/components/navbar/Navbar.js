@@ -1,26 +1,30 @@
-import React, { useState } from "react";
 import "./navbar.css";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import logo from "../../assets/img/LHFHLogoTransparent.png";
+import Drawer from "@mui/material/Drawer";
+import CloseIcon from "@mui/icons-material/Close";
+import Divider from "@mui/material/Divider";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
 
-function Navbar() {
-  const [menuAnchorEl, setMenuAnchorEl] = useState(null);
-  const isMobile = useMediaQuery("(maxWidth: 800px)");
+const Navbar = () => {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const isMobile = useMediaQuery("(max-width: 800px)");
 
-  const handleMenuOpen = (event) => {
-    setMenuAnchorEl(event.currentTarget);
+  const handleDrawerOpen = () => {
+    setDrawerOpen(true);
   };
 
-  const handleMenuClose = () => {
-    setMenuAnchorEl(null);
+  const handleDrawerClose = () => {
+    setDrawerOpen(false);
   };
 
   const scrollToSection = (sectionId, offset = 0) => {
@@ -30,14 +34,19 @@ function Navbar() {
         top: section.offsetTop + offset,
         behavior: "smooth",
       });
-      handleMenuClose();
+      handleDrawerClose();
     }
   };
 
   return (
     <AppBar position="sticky" sx={{ backgroundColor: "#FFF5E1" }}>
       <Toolbar>
-        <img src={logo} alt="Love Hope Faith Homes Logo" className="logo" />
+        <img
+          src={logo}
+          alt="Love Hope Faith Homes Logo"
+          className="logo"
+          style={{ width: "100px", Height: "100px" }}
+        />
         <Typography
           className="Title"
           variant="h6"
@@ -52,54 +61,80 @@ function Navbar() {
               edge="start"
               color="inherit"
               aria-label="menu"
-              onClick={handleMenuOpen}
+              onClick={handleDrawerOpen}
             >
-              <MenuIcon style={{ color: "#333" }} />{" "}
-              {/* Set the color to black */}
+              <MenuIcon style={{ color: "black" }} />
             </IconButton>
-            <Menu
-              anchorEl={menuAnchorEl}
-              open={Boolean(menuAnchorEl)}
-              onClose={handleMenuClose}
+            <Drawer
+              anchor="right"
+              open={drawerOpen}
+              onClose={handleDrawerClose}
+              sx={{
+                "& .MuiPaper-root": {
+                  width: "200px",
+                  height: "220px",
+                  backgroundColor: "#FFF5E1",
+                },
+              }}
             >
-              <MenuItem onClick={() => scrollToSection("about", -250)}>
-                <Button color="inherit" style={{ color: "#333" }}>
-                  About
-                </Button>
-              </MenuItem>
-              <MenuItem onClick={() => scrollToSection("contact")}>
-                <Button color="inherit" style={{ color: "#333" }}>
-                  Contact Us
-                </Button>
-              </MenuItem>
-              <MenuItem onClick={() => scrollToSection("tour", -60)}>
-                <Button color="inherit" style={{ color: "#333" }}>
-                  Virtual Tour
-                </Button>
-              </MenuItem>
-            </Menu>
+              <IconButton
+                sx={{
+                  mb: 2,
+                  margin: "8px",
+                  "&:hover": { backgroundColor: "transparent" },
+                  "&.Mui-focusVisible": { backgroundColor: "transparent !important" },
+    "&.Mui-focusVisible .MuiSvgIcon-root": {
+      backgroundColor: "transparent !important",
+    },
+    "&:active": { backgroundColor: "transparent !important" },
+                }}
+              >
+                <CloseIcon
+                  onClick={handleDrawerClose}
+                  style={{ color: "black" }}
+                />
+              </IconButton>
+              <Divider sx={{ mb: 2 }} />
+              <Box sx={{ mb: 2 }}>
+                <ListItemButton
+                  onClick={() => scrollToSection("about", -250)}
+                  sx={{
+                    "& .MuiTypography-root": { color: "black" },
+                    textAlign: "center",
+                  }}
+                >
+                  <ListItemText primary="About" />
+                </ListItemButton>
+                <ListItemButton
+                  onClick={() => scrollToSection("contact")}
+                  sx={{
+                    "& .MuiTypography-root": { color: "black" },
+                    textAlign: "center",
+                  }}
+                >
+                  <ListItemText primary="Contact Us" />
+                </ListItemButton>
+                <ListItemButton
+                  onClick={() => scrollToSection("tour", -60)}
+                  sx={{
+                    "& .MuiTypography-root": { color: "black" },
+                    textAlign: "center",
+                  }}
+                >
+                  <ListItemText primary="Virtual Tour" />
+                </ListItemButton>
+              </Box>
+            </Drawer>
           </>
         ) : (
           <div>
-            <Button
-              color="inherit"
-              style={{ color: "#333" }}
-              onClick={() => scrollToSection("about", -250)}
-            >
+            <Button onClick={() => scrollToSection("about", -250)}>
               About
             </Button>
-            <Button
-              color="inherit"
-              style={{ color: "#333" }}
-              onClick={() => scrollToSection("contact")}
-            >
+            <Button onClick={() => scrollToSection("contact")}>
               Contact Us
             </Button>
-            <Button
-              color="inherit"
-              style={{ color: "#333" }}
-              onClick={() => scrollToSection("tour", -60)}
-            >
+            <Button onClick={() => scrollToSection("tour", -60)}>
               Virtual Tour
             </Button>
           </div>
@@ -107,6 +142,6 @@ function Navbar() {
       </Toolbar>
     </AppBar>
   );
-}
+};
 
 export default Navbar;
