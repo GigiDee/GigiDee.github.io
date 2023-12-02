@@ -57,22 +57,7 @@ const About = () => {
             ...(isDesktop ? {} : mobileTextStyle),
           }}
         >
-          Love Hope Faith Homes of Wisconsin is a faith-based adult family
-          home, and was created to be a haven for adults with special needs.
-          Making residents truly feel at home while providing exceptional
-          compassionate care customized to meet each resident’s specific
-          personal needs is our highest priority. <br />
-          <br />
-          LHFH residents are treated with the dignity and respect they deserve,
-          while ensuring their individual rights, safety and healthcare needs
-          are met at all times. We firmly believe that all individuals deserve
-          outstanding care customized for their specific needs to maximize their
-          fullest potential while fostering independence. <br />
-          <br />
-          The management and staff are committed to ensuring that residents’
-          lives at Love Hope Faith Homes are filled with appropriate
-          stimulating activities, healthy meals, a clean and safe environment,
-          and much more!
+          Love Hope Faith Homes of Wisconsin (LHFH) is a faith based adult family home created to be a haven for individuals with intellectual or developmental disabilities where care and support are personalized to match their specific needs. At LHFH, our priority is to provide a clean, safe environment where residents thrive while living with dignity and respect.
         </Typography>
         <div style={{ textAlign: "center" }}>
           <Button
