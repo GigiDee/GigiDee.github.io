@@ -23,7 +23,7 @@ const About = () => {
   };
 
   const mobileTextStyle = {
-    textAlign: "left",
+    textAlign: "center",
   };
 
   const scrollToSection = (sectionId, offset = 0) => {
@@ -62,8 +62,10 @@ const About = () => {
           <br />
           Our <span style={{ fontWeight: "bold" }}>Love</span> is to provide personalized care and support that match each person's specific needs.
           <br />
+          {!isDesktop && <br />}
           Our <span style={{ fontWeight: "bold" }}>Hope</span> is to create a haven for individuals with intellectual or developmental disabilities.
           <br />
+          {!isDesktop && <br />}
           Our <span style={{ fontWeight: "bold" }}>Faith</span> gives the credit to the One who continually guides, provides and pulls all things together for our good.
           <br />
           <br />
