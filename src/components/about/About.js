@@ -69,7 +69,7 @@ const About = () => {
           Our <span style={{ fontWeight: "bold" }}>Faith</span> gives the credit to the One who continually guides, provides and pulls all things together for our good.
           <br />
           <br />
-          At LHFH, our priority is to provide a clean, safe environment where residents thrive while living with dignity and respect.
+          Our priority is to provide a clean, safe environment where residents thrive while living with dignity and respect.
         </Typography>
         <div style={{ textAlign: "center" }}>
           <Button
