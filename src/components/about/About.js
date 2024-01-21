@@ -63,7 +63,7 @@ const About = () => {
           Our <span style={{ fontWeight: "bold" }}>Love</span> is to provide personalized care and support that match each person's specific needs.
           <br />
           {!isDesktop && <br />}
-          Our <span style={{ fontWeight: "bold" }}>Hope</span> is to create a haven for individuals with intellectual or developmental disabilities.
+          Our <span style={{ fontWeight: "bold" }}>Hope</span> is to create a haven for seniors and differently abled adults.
           <br />
           {!isDesktop && <br />}
           Our <span style={{ fontWeight: "bold" }}>Faith</span> gives the credit to the One who continually guides, provides and pulls all things together for our good.
