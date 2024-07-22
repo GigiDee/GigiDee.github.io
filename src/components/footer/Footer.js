@@ -79,7 +79,7 @@ const Footer = () => {
               </IconButton>
             </Box>
               <Typography variant="h6">Charm Brea</Typography>
-              <Typography variant="body1">charm@lhfhome.com</Typography>
+              <Typography variant="body1">charm@asi-wi.com</Typography>
               <Typography variant="body1">+12623882482</Typography>
             </Grid>
             {/* Right Side */}
@@ -108,7 +108,7 @@ const Footer = () => {
               </IconButton>
             </Box>
               <Typography variant="h6">Dawn Fritz</Typography>
-              <Typography variant="body1">dawn@lhfhome.com</Typography>
+              <Typography variant="body1">dawn@asi-wi.com</Typography>
               <Typography variant="body1">+12623657228</Typography>
             </Grid>
           </Grid>
