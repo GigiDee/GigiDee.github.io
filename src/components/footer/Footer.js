@@ -107,9 +107,9 @@ const Footer = () => {
                 <MailOutlineIcon />
               </IconButton>
             </Box>
-              <Typography variant="h6">Dawn Fritz</Typography>
-              <Typography variant="body1">dawn@asi-wi.com</Typography>
-              <Typography variant="body1">+12623657228</Typography>
+              <Typography variant="h6">Jessica Santos</Typography>
+              <Typography variant="body1">jessica@asi-wi.com</Typography>
+              <Typography variant="body1">+12622392986</Typography>
             </Grid>
           </Grid>
         </Box>
